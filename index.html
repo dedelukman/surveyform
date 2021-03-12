@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header class="header text-center">
+<h1 id="title" >Activities during a pandemic</h1>
+<p id="description">Fill in your daily activities during the Covid-19 Pandemic</p>
+</header>
+<form id="survey-form">
+  <div class="form-group">
+  <label for="name" id="name-label">Name</label>
+  <input id="name" name="name" type="text" class="form-control" placeholder="Bill Gates" required></input>
+</div>
+<div class="form-group">
+<label for="email" id="email-label">Email</label>
+<input id="email" name="email" type="email" class="form-control" placeholder="BillGates@microsoft.com" required></input>
+</div>
+<div class="form-group">
+<label for="number" id="number-label">Age</label>
+<input id="number" name="number" type="number" class="form-control" placeholder="10" min="10" max="100" required></input>
+</div>
+<div class="form-group">
+<label for="dropdown">Profession</label>
+<select id="dropdown" class="form-control" >
+  <option value="Student">Student</option>
+  <option value="Teacher">Teacher</option>
+  <option value="Worker">Worker</option>
+  <option value="Traders">Traders</option>  
+  <option value="Self Employe">Self Employe</option>    
+</select>
+</div>
+<div class="form-group">
+<label for="model_activity" id="activity"> <b>The Place :</b></label>
+<br>
+<input id="model_activity" type="radio" id="remote" name="activity" value="remote">
+<label for=model_activity>Remote</label>
+<br>
+<input id="model_activity" type="radio" id="on_site" name="activity" value="on_site">
+<label for=model_activity>On Site</label>
+<br>
+<input id="model_activity" type="radio" id="both" name="activity" value="Both">
+<label for=model_activity>Both</label>
+</div>
+<div class="form-group">
+<label for="model_order_activity" id="other_activity"> <b>Useful Activities</b></label>
+<br>
+<input id="checkbox" type="checkbox" id="reading" name="activity" value="reading">
+<label for=model_other_activity>Reading</label>
+<br>
+<input id="checkbox" type="checkbox" id="planting" name="activity" value="planting">
+<label for=model_other_activity>Planting</label>
+<br>
+<input id="checkbox" type="checkbox" id="workout" name="activity" value="workout">
+<label for=model_other_activity>Workout</label>
+<br>
+<input id="checkbox" type="checkbox" id="workout" name="activity" value="workout">
+<label for=model_other_activity>Swiming</label>
+<br>
+<input id="checkbox" type="checkbox" id="workout" name="activity" value="workout">
+<label for=model_other_activity>Traveling</label>
+</div>
+<div class="form-group">
+<label for="email" id="email-label">Additional Comments</label>
+<textarea id="textarea" name="instructions" rows="5" cols="40" required class="input-textarea" placeholder="Enter your comment here..."></textarea>
+</div>
+<input id="submit" type="submit" value="Submit" class="submit-button">
+
+
+</form>
